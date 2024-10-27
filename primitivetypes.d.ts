@@ -1,0 +1,18 @@
+declare let agentName: string;
+declare let agentLearningAbility: number;
+declare let isAgentDangerous: boolean;
+declare let agentFavouriteFood: string;
+declare let thing: any;
+declare const agentSkillSets: string[];
+declare let foundSkill: any;
+declare function assignAgentTask(personToKill: string): void;
+declare const doSomething: (person: string, age: number, isDump: boolean, isRich?: string) => void;
+declare function greet(): string;
+declare const listOfColours: string[];
+declare function printTwice(message: string): void;
+declare function error(message: string): never;
+declare function fail(): never;
+declare let taxNumber: number;
+declare let taxString: number;
+declare let taxString1: string;
+declare let taxString2: string;
