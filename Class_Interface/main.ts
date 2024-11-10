@@ -209,16 +209,23 @@ console.log('another generics example')
 console.log(removeOrders([100, 101, 102]))
 console.log(removeOrders(['burger', 'soda', 'chips']))
 
-//use of generics in Interface
+//use of generics class
 class Shirt<T> {
+  brand: string
   size: T
   price: number
 
-  constructor(size: T, price: number) {
+  constructor(brand: string, size: T, price: number) {
+    this.brand = brand
     this.size = size
     this.price = price
   }
+  getDetails() {
+    console.log(`Brand:${this.brand} size is ${this.size}`)
+  }
 }
-const gazman = new Shirt(34, 75)
-const roddgunn = new Shirt('M', 75)
+const gazman = new Shirt('gazman', 34, 75)
+gazman.getDetails()
+const roddgunn = new Shirt('roddgunn', 'M', 75)
+roddgunn.getDetails()
 //-----------------------------------------------------------------------------

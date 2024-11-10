@@ -172,3 +172,20 @@ function removeOrders(arr) {
 console.log('another generics example');
 console.log(removeOrders([100, 101, 102]));
 console.log(removeOrders(['burger', 'soda', 'chips']));
+//use of generics class
+var Shirt = /** @class */ (function () {
+    function Shirt(brand, size, price) {
+        this.brand = brand;
+        this.size = size;
+        this.price = price;
+    }
+    Shirt.prototype.getDetails = function () {
+        console.log("Brand:".concat(this.brand, " size is ").concat(this.size));
+    };
+    return Shirt;
+}());
+var gazman = new Shirt('gazman', 34, 75);
+gazman.getDetails();
+var roddgunn = new Shirt('roddgunn', 'M', 75);
+roddgunn.getDetails();
+//-----------------------------------------------------------------------------
